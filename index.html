@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio NarKan</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="./image/logo.png" type="image/x-icon" />
+  </head>
+  
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <h1>NarKan</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section 1 -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my projects and skills in web development.</p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+
+      <img src="./image/mask.png" class="abs-img img-top" alt="Top" />
+      <img src="./image/dragon.png" class="abs-img img-right" alt="Right" />
+      <img src="./image/anime.png" class="abs-img img-bottom" alt="Bottom" />
+      <img src="./image/gamepad.png" class="abs-img img-left" alt="Left" />
+    </section>
+
+    <!-- Modal -->
+    <div id="devModal" class="modal-overlay">
+      <div class="modal-content">
+        <h2>SYSTEM MESSAGE</h2>
+        <p>
+          MODULE ACCESS DENIED:<br />This section is currently under neural
+          construction.
+        </p>
+        <button onclick="closeModal()">ACKNOWLEDGE</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>

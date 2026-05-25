@@ -1,0 +1,79 @@
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Lebih gelap agar fokus */
+    backdrop-filter: blur(15px); /* Blur lebih dalam */
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #0a0a0a;
+    padding: 50px;
+    border: 1px solid rgba(255, 166, 0, 0.5);
+    border-radius: 4px; 
+    text-align: center;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 1), 0 0 20px rgba(0, 210, 255, 0.1);
+    animation: modalSlide 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes modalSlide {
+    from { opacity: 0; transform: scale(0.9) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px;
+    width: 20px; height: 20px;
+    border-top: 2px solid #ff8800;
+    border-left: 2px solid #ff8800;
+}
+
+.modal-content h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(255, 166, 0, 0.5);
+}
+
+.modal-content p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.modal-content button {
+    background: #ff8800;
+    color: #000;
+    border: none;
+    padding: 12px 40px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Bentuk tombol futuristik */
+}
+
+.modal-content button:hover {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,83 @@
+@import "nav.css";
+@import "hero.css";
+@import "modal.css";
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding: 0 15px;
+        height: 60px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    
+    .hero h1 {
+        font-size: 2rem; 
+        padding: 0 10px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abs-img {
+        width: 130px; 
+        opacity: 0.15; 
+    }
+
+    .img-top {
+        top: 10%;
+        left: 5%;
+    }
+
+    .img-right {
+        top: 15%;
+        right: -5%;
+    }
+
+    .img-bottom {
+        bottom: 10%;
+        right: 5%;
+        width: 160px;
+    }
+
+    .img-left {
+        bottom: 15%;
+        left: -5%;
+    }
+
+    /* Penyesuaian Modal */
+    .modal-content {
+        width: 90%;
+        padding: 30px 15px;
+        margin: 0 10px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
+}
