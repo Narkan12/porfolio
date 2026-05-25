@@ -2,82 +2,58 @@
 @import "hero.css";
 @import "modal.css";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 768px) {
-    body {
+    html, body {
         overflow-x: hidden;
+        width: 100%;
     }
 
     nav {
-        padding: 0 15px;
-        height: 60px;
+        padding: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto !important; 
     }
 
     .nav-links {
-        gap: 10px;
+        gap: 8px;
+        justify-content: center;
+        width: 100%;
     }
 
     nav a {
-        font-size: 11px;
-        padding: 5px;
+        font-size: 10px;
     }
 
-    
+    .hero {
+        padding: 20px;
+        overflow: hidden;
+    }
+
     .hero h1 {
-        font-size: 2rem; 
-        padding: 0 10px;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-        padding: 0 15px;
+        font-size: 1.6rem !important; 
     }
 
     .hero-btns {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column !important; 
+        align-items: center;
         width: 100%;
-        padding: 0 20px;
+        gap: 10px;
     }
 
     .btn-primary, .btn-secondary {
-        width: 100%;
-        text-align: center;
+        width: 80% !important; 
+        margin: 0 auto;
     }
 
     .abs-img {
-        width: 130px; 
-        opacity: 0.15; 
-    }
-
-    .img-top {
-        top: 10%;
-        left: 5%;
-    }
-
-    .img-right {
-        top: 15%;
-        right: -5%;
-    }
-
-    .img-bottom {
-        bottom: 10%;
-        right: 5%;
-        width: 160px;
-    }
-
-    .img-left {
-        bottom: 15%;
-        left: -5%;
-    }
-
-    /* Penyesuaian Modal */
-    .modal-content {
-        width: 90%;
-        padding: 30px 15px;
-        margin: 0 10px;
-    }
-
-    .modal-content h2 {
-        font-size: 1.2rem;
+        width: 80px;
+        opacity: 0.1;
     }
 }
